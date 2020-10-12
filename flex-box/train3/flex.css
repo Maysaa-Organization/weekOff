@@ -1,0 +1,24 @@
+/* flex-direction : row / row-reverse / column /column-reverse */
+.container{
+    background-color: #053154;
+    display: flex;
+    flex-direction:row ;
+    justify-content: center;
+    height: 500px;
+    border: 2px solid black;
+    align-items: center;
+    
+}
+.container div:nth-child(3){
+order:-2
+}
+.container div:nth-child(4){
+    order:-1
+ }
+ .container div:nth-child(6){
+    order:-3;
+    flex-grow:7;
+    }
+.container div{
+    flex-grow: 2;
+    }
