@@ -1,0 +1,36 @@
+/* start body */
+body{
+    margin-top: 77px;
+}
+/* end body */
+/* start navbar */
+.navbar{    
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+a {
+    color: #757272;
+}
+
+/* end navbar */
+/* start slider */
+.slider{
+    background-color: #eee;
+}
+.carousel-item{
+    -webkit-background-size: cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+
+}
+.item1{
+    background-image: url(../img/slider1.jpg);
+}
+.item2{
+    background-image: url(../img/slider4.jpg);
+}
+.item3{
+    background-image: url(../img/slider5.jpg);
+}
+/* end slider */
