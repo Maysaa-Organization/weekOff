@@ -23,3 +23,14 @@ function signUp(){
 })
 
 }
+
+// slider
+$(function (){
+    'use strict';
+    //slider height
+    var windowHeight=$(window).height(),
+        navheight   =$('.navbar').innerHeight();
+
+    $('.slider , .carousel-item').height(windowHeight-navheight);
+
+});
