@@ -1,19 +1,52 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>signUp page</title>
-        <link rel="stylesheet" href="css/style.css">
+        <meta charset="UTF-8"/>
+        <meta name="referrer" content="strict-origin" />
+        <!-- responsive meta tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>WeekOff Project</title>
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+
     </head>
     <body>
-        <div class="container">
-            <div class="my-form">
-                <h1>SignUp Form</h1>
-                <input type="text" placeholder="Enter Your User Name please" id="nameSignup">
-                <input type="password" placeholder="Enter Your password please" id="passSignup">
-                <input type="password" placeholder="Enter Your confirm password please" id="confirmpassSignup">
-                <button onclick="signUp()">SignUp</button>
+        <div class="singup-form">
+            <div class="container">
+                <div class="row">
+                    <div class='offset-md-3 col-md-6 my-form'>
+                            <h1>SignUp form</h1>
+                        
+                            <div class="form-group">
+                                <label for="name">UserName</label>
+                                <input type="text" class="form-control" placeholder="Enter your name" name="name" id="name" required> 
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" placeholder="Enter your Email" name="email" id="email" required> 
+                            </div>
+
+                            <div class="form-group">
+                                <label for="pass">password</label>
+                                <input type="password" class="form-control" name="pass" placeholder="Enter your password" id="pass" required> 
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmpass">password</label>
+                                <input type="password" class="form-control" name="confirmpass" placeholder="Enter your password" id="confirmpass" required> 
+                            </div>
+                            <button  class="btn" id="log" onclick="signUp()">signUp</button>
+                            
+                            <p  id="must"></p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <script src="js/main.js"></script>
+        </div>        
     </body>
+
+    <script src="js/jQueryv3.5.1.js"></script>
+    <!-- <script src="js/fontawesome.min.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>

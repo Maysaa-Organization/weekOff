@@ -220,72 +220,37 @@ footer p{
 
 
 
-#name,#pass{
-    width:100%
-   }
-   
-   input[type=text], input[type=password] {
-   
-       padding: 12px 20px;
-       margin: 8px 0;
-       display: inline-block;
-       border: 1px solid #ccc;
-       box-sizing: border-box;
-   }
-   
-   #log{
-       background-color: #4CAF50;
-       color: white;
-       padding: 14px 20px;
-       margin: 8px 0;
-       border: none;
-       cursor: pointer;
-       width: 100%;
-   }
-   #log:hover {
-       opacity: 0.8;
-   }
-   
-/*    
-   span.psw {
-       float: right;
-       padding-top: 16px;
-   } */
-   
-   .formSign{
-     width: 35%;
-     height:500px;
-     background-color: rgb(0, 0,0,0.6);
-   }
-     .myForm{
-         padding:20px;
-     }
-   .myForm>h1{
-       text-align: center;
-       color:#ec9e90;
-   }
-     .myForm>label{
-         color: seashell;
-     }
-     #log,.logOut,#typeSearch{
-         background-color: #ec9e90;
-         font-size:16px;
-         border-color: #ec9e90;
-         color:#fff;
-         font-weight: bold;
-         
-     }
-     
-     .signinPage{
-         /* background-image: url('../img/background.jpg'); */
-         height:100vh;
-         width: 100%;
+/* sing in page */
+.singin-form{
+    margin-top: 50px;
+}
+.my-form{
+    border:1px solid #d84e80;
+    border-radius: 15px;
+    padding: 20px;
+}
+.my-form h1{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+input[type=text], input[type=password] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+#log,.logOut{
+    background-color: #d84e80;
+    font-size:16px;
+    border-color: #d84e80;
+    color:#fff;
+    font-weight: bold;
+} 
     
- 
-     } 
-     #must{
-         font-size: 20px;
-         color: #f74545;
-         font-weight: bold;
-   
-   }
+#must{
+    font-size: 20px;
+    color: #f74545;
+    font-weight: bold;
+}
