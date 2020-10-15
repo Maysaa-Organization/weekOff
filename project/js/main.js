@@ -1,10 +1,41 @@
-// var users=[{id:1,name:'moh' , pass:123},{id:2,name:'khaled',pass:345}]
-// function generateId(users){
-//     if(users.length === 0){
-//         return 1
-//     }else{
-//         return users[users.length-1].id+1
-//     }
+
+//sign in function
+//array of users
+var user=[{'name':'maysaa' , 'pass':'123',"confirmpass":'123',"email":'maysaa@gmail.com'},{'name':'yahya' ,'pass':'456' ,"confirmpass":'456',"email":'yahya@gmail.com'}];
+//signin function
+function signIn(){
+    
+    var nameInput=document.getElementById('name').value;
+    var passInput=document.getElementById('pass').value;
+    var par=document.getElementById('must');
+    const checkFind = user.findIndex(function(object,index){
+    
+        if(object.name.toLowerCase() === nameInput.toLowerCase()&&object.pass===passInput){
+            window.location.href = "index.html";
+        }else{
+            par.innerHTML='your name or password is not correct';
+        }
+    
+})
+}
+
+
+function signUp(){
+    var email=document.getElementById('email').value;
+    var pass=document.getElementById('pass').value;
+    var pass=document.getElementById('confirmpass').value;
+    if(user[email].includes('maysaa@gmail.com')){
+        console.log(true)
+    }
+
+
+
+}
+    // if(users.length === 0){
+    //     return 1
+    // }else{
+    //     return users[users.length-1].id+1
+    // }
 // }
 
 // function signUp(){
@@ -28,24 +59,6 @@
 
 
 
-//sign in function
-//array of users
-var user=[{'name':'maysaa' , 'pass':'123'},{'name':'yahya' ,'pass':'456' }];
-//signin function
-function signIn(){
-    var nameInput=document.getElementById('name').value;
-    var passInput=document.getElementById('pass').value;
-    var par=document.getElementById('must');
-    const checkFind = user.findIndex(function(object,index){
-      if(object.name.toLowerCase() === nameInput.toLowerCase() && object.pass === passInput){
-          window.location.href = "index.html";
-      }else{
-      
-      par.innerHTML='your name or password is not correct';
-    }
-    
-  })
-}
 
 
 // slider
