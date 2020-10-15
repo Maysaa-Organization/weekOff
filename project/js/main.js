@@ -55,6 +55,7 @@ $(function (){
     var windowHeight=$(window).height(),
         navheight   =$('.navbar').innerHeight();
     $('.slider , .carousel-item').height(windowHeight-navheight);
+    
     //to make hide and show for gallary content 
     $("#gallary ul li").on('click',function(){
         $(this).addClass('active').siblings().removeClass('active');
